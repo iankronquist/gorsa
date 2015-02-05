@@ -10,6 +10,5 @@ type Cipher interface {
 	Decrypt(message *big.Int, cipherKey *key.Key) *big.Int
 	Encrypt_Bytes(message *[]byte, cipherKey *key.Key) *[]byte
 	Decrypt_Bytes(cipherText *[]byte, cipherKey *key.Key) *[]byte
-	KeyGen() *key.Key
 }
 
